@@ -1,0 +1,24 @@
+.booklist {
+    width: 90vw;
+    max-width: 1170px;
+    margin: 5rem auto;
+    display: grid;
+    gap: 2rem;
+    /* height: calc(100vh - 128px); */
+}
+
+/* Responsive */
+
+@media screen and (max-width:600px) {
+    .booklist {
+        margin: 5rem auto 3.2rem auto;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .booklist {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

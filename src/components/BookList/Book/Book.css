@@ -1,0 +1,39 @@
+.book {
+    /* background-color: #fff; */
+    background-color: #191b20;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.book:hover {
+    transition: all;
+    box-shadow: 0.1rem 0.2rem 1.5rem #323641;
+    -webkit-transition: box-shadow .4s ease-in;
+}
+
+.book img {
+    height: 220px;
+    object-fit: contain;
+    justify-self: center;
+}
+
+.book h1 {
+    margin-top: 0.5rem;
+}
+
+.book h4 {
+    color: #929aa5;
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
+}
+
+@media screen and (max-width:600px) {
+    .book img {
+        width: 100%;
+        /* height: auto; */
+        height: 200px;
+    }
+}
